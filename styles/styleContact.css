@@ -1,0 +1,129 @@
+body {
+  background-color: var(--primary-background-color);
+}
+
+.contact-main {
+  background-color: var(--primary-background-color);
+}
+
+form {
+  display: block;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    align-items: start;
+  }
+}
+
+/* .google-maps-loacation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.map-frame {
+  display: flex;
+} */
+
+.form-about-company {
+  margin-left: 4px;
+}
+
+.form-submit-gift {
+  display: grid;
+  height: 97.8%;
+  margin-left: 4px;
+  justify-content: center;
+  @media (min-width: 768px) {
+    margin-left: -300px;
+  }
+}
+
+.form-picture-submit form {
+  margin-inline: 1.5em;
+  @media (min-width: 678px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
+  .submit-form {
+    width: fit-content;
+    margin-block-end: 1em;
+  }
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-background-color);
+  border: none;
+  border-radius: 10px;
+  margin-block-end: 1em;
+  padding-block-start: 1em;
+  width: 98%;
+  text-align: center;
+  @media (min-width: 768px) {
+    width: 50%;
+    height: 97.8%;
+  }
+}
+
+legend {
+  float: left;
+  font-size: var(--font-size-subject);
+  margin-block-end: 2em;
+}
+
+label {
+  padding-inline-end: 1em;
+  margin-block-end: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 100%;
+  max-width: 400px;
+  padding-left: 0;
+  padding-inline-start: 5px;
+}
+
+.email-form input[type="email"] {
+  margin-left: -163px;
+}
+
+.input-label-text-large {
+  appearance: none;
+  border-radius: 6px;
+  border: 1px solid var(--secondary-text-color);
+  color: var(--secondary-text-color);
+  width: 24.638em;
+  height: 63px;
+  font-family: "parkinsans", sans-serif;
+  font-size: 1em;
+}
+
+textarea {
+  max-width: 400px;
+  max-height: 150px;
+  width: 100%;
+  padding-left: 0;
+  padding-inline-start: 10px;
+}
+
+input[type="submit"] {
+  /* align-self: flex-end; */
+  width: 20%;
+  padding: 10px;
+}
+
+.label-textarea-large {
+  appearance: none;
+  border-radius: 6px;
+  color: var(--secondary-text-color);
+  width: 100%;
+  font-size: var(--font-size-subtitle);
+  padding-left: 0.3em;
+  height: 199px;
+}
