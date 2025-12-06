@@ -574,43 +574,45 @@ footer {
   background-color: var(--secondary-color);
   color: var(--secondary-background-color);
   padding: 24px;
-}
 
-.footer-text {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background-color: var(--primary-color);
-  color: var(--secondary-background-color);
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 24px;
+  .footer-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 24px;
 
-  @media (min-width: 678px) {
-    padding: 30px 40px;
+    @media (min-width: 678px) {
+      padding: 30px 40px;
+    }
+
+    @media (min-width: 768px) {
+      justify-items: center;
+      text-align: center;
+    }
+
+    .footer-text-cadeau {
+      text-align: center;
+      margin-left: 0;
+    }
+
+    section {
+      h2 {
+        font-size: var(--font-size-heading);
+        margin-bottom: 6px;
+      }
+
+      h3 {
+        font-size: var(--font-size-subtitle);
+        font-weight: var(--font-weight-standard);
+        opacity: 1;
+      }
+    }
   }
-
-  @media (min-width: 768px) {
-    justify-items: center;
-    text-align: center;
-  }
-
-  .footer-text-cadeau {
-    text-align: center;
-    margin-left: 0;
-  }
-}
-
-.footer-text section h2 {
-  font-size: var(--font-size-heading);
-  margin-bottom: 6px;
-}
-
-.footer-text section h3 {
-  font-size: var(--font-size-subtitle);
-  font-weight: var(--font-weight-standard);
-  opacity: 1;
 }
 
 .email-form {
@@ -623,19 +625,17 @@ footer {
   @media (min-width: 678px) {
     width: auto;
   }
-}
 
-.email-form input[type="email"] {
-  padding: 10px 14px;
-  font-size: var(--font-size-text);
-  width: 100%;
-  flex-grow: 1;
-  /* width: 310px;
-  margin-left: -150px; */
-
-  @media (min-width: 678px) {
-    /* width: 400px; */
+  input[type="email"] {
+    padding: 10px 14px;
+    font-size: var(--font-size-text);
     width: 100%;
+    flex-grow: 1;
+
+    @media (min-width: 678px) {
+      width: 100%;
+      padding: 10px 150px;
+    }
   }
 }
 
