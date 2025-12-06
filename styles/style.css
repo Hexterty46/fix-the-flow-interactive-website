@@ -662,7 +662,6 @@ footer {
 .site-footer {
   background-color: var(--secondary-color);
   color: var(--secondary-background-color);
-  padding: 2rem;
 
   .mobile-footer {
     display: block;
