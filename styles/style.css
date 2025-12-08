@@ -139,8 +139,6 @@ header {
     margin-left: 25px;
     margin-top: 36.6rem;
   }
-
-  
 }
 
 .highlight {
@@ -327,9 +325,18 @@ header {
   margin: 0 auto;
   white-space: nowrap;
   background-color: var(--secondary-background-color);
-  border: 1px solid var(--primary-color);
+  border: 2px solid var(--primary-color);
   margin-bottom: -120px;
   margin-right: 700px;
+  font-weight: bold;
+
+  svg {
+    display: none;
+
+    @media (min-width: 375px) {
+      display: flex;
+    }
+  }
 
   @media (min-width: 1024px) {
     margin-bottom: 0;
@@ -441,7 +448,7 @@ header {
   bottom: 0px;
   right: 0px;
   border-radius: 16px;
-  height: 700px;
+  height: 580px;
   background-color: var(--primary-background-color);
   width: 100%;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
@@ -526,16 +533,26 @@ header {
   border-top: 1px solid var(--checkbox-background-color);
   margin-top: 150px;
   background-color: var(--secondary-background-color);
+
+  input {
+    flex: 1;
+    border: 2px solid var(--checkbox-background-color);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: var(--font-size-text);
+    outline: none;
+  }
 }
 
-.chat-input input {
+/* .chat-input input {
   flex: 1;
   border: 2px solid var(--checkbox-background-color);
   border-radius: 10px;
   padding: 10px;
   font-size: var(--font-size-text);
   outline: none;
-}
+} */
+
 /* article tags */
 .article-tag-timeless {
   background: var(--timeless-label-color);
@@ -573,10 +590,9 @@ header {
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.2s ease;
-}
-
-.chat-input button:hover {
-  background-color: var(--primary-color);
+  &:hover {
+    background-color: var(--primary-color);
+  }
 }
 
 /* FOOTER */
@@ -750,12 +766,11 @@ footer {
   }
 }
 
-    /* .article-statistics {
+/* .article-statistics {
       @media (min-width: 1024px) {
         display: none;
       }
     } */
-
 
 /* .main-container {
   align-items: start;
