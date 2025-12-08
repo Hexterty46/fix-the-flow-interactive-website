@@ -4,11 +4,9 @@
   max-width: 180px;
 }
 
-
 body {
   background-color: var(--primary-background-color);
 }
-
 
 form {
   margin-inline: 1.5em;
