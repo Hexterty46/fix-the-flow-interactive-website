@@ -254,7 +254,7 @@ header {
   width: 95%;
 
   @media (min-width: 678px) {
-    width: 440px;
+    width: auto;
   }
 
   @media (min-width: 1024px) {
@@ -280,6 +280,10 @@ header {
     flex-direction: row;
     justify-content: flex-start;
   }
+}
+
+.label-font-weight {
+  padding: 10px;
 }
 
 .filter-group {

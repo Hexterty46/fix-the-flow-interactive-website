@@ -215,39 +215,72 @@
         <section class="right-content">
           <section class="filter-section" id="filterSection">
             <form class="filter-form">
-              <fieldset class="filter-group">
-                <label for="recipient">Voor wie?</label>
-                <select id="recipient" name="recipient">
-                  <option value="">Kies...</option>
-                  <option value="man">Man</option>
-                  <option value="vrouw">Vrouw</option>
-                  <option value="kind">Kind</option>
-                  <option value="vriend">Vriend</option>
-                  <option value="vriendin">Vriendin</option>
-                </select>
-              </fieldset>
+              <input
+                type="checkbox"
+                value="checkbox-elderly"
+                id="checkbox-elderly-id"
+                name="checkbox-name-elderly"
+                class=""
+              />
+              <label
+                for="checkbox-elderly-id"
+                class="label-font-weight unselectable"
+                ><strong>65+</strong> Elderly</label
+              >
 
-              <fieldset class="filter-group">
-                <label for="occasion">Gelegenheid</label>
-                <select id="occasion" name="occasion">
-                  <option value="">Kies...</option>
-                  <option value="verjaardag">Verjaardag</option>
-                  <option value="kerst">Kerst</option>
-                  <option value="jubileum">Jubileum</option>
-                  <option value="lente">Lente</option>
-                  <option value="herfst">Herfst</option>
-                </select>
-              </fieldset>
+              <input
+                type="checkbox"
+                value="checkbox-teen"
+                id="checkbox-teen-id"
+                name="checkbox-teen-name"
+                class=""
+              />
+              <label
+                for="checkbox-teen-id"
+                class="label-font-weight unselectable"
+                ><strong>13-19</strong> Teen</label
+              >
 
-              <fieldset class="filter-group">
-                <label for="price">Prijs</label>
-                <select id="price" name="price">
-                  <option value="">Kies...</option>
-                  <option value="low">Tot €25</option>
-                  <option value="mid">€25 - €50</option>
-                  <option value="high">Meer dan €50</option>
-                </select>
-              </fieldset>
+              <input
+                type="checkbox"
+                value="checkbox-young-adult"
+                id="checkbox-young-adult-id"
+                name="checkbox-young-adult-name"
+                class=""
+              />
+              <label
+                for="checkbox-young-adult-id"
+                class="label-font-weight unselectable"
+                ><strong>20-39</strong> Young adult</label
+              >
+
+              <input
+                type="checkbox"
+                value="checkbox-dreamer"
+                id="checkbox-dreamer-id"
+                name="checkbox-dreamer-name"
+                class=""
+              />
+              <label
+                for="checkbox-dreamer-id"
+                class="label-font-weight-heading unselectable"
+              >
+                Dreamer</label
+              >
+
+              <input
+                type="checkbox"
+                value="checkbox-5"
+                id="checkbox-5"
+                name="checkbox-5"
+                class=""
+              />
+              <label
+                for="checkbox-5"
+                class="unselectable label-font-weight-heading"
+              >
+                Sensitive</label
+              >
             </form>
           </section>
           <button
