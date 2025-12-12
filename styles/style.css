@@ -101,6 +101,8 @@ header {
   width: 100%;
 
   @media (min-width: 1024px) {
+    position: sticky;
+    top: 20px;
     height: fit-content;
     margin-top: 0;
     align-self: start;
@@ -129,7 +131,7 @@ header {
   margin-bottom: 12px;
   color: var(--secondary-text-color);
   font-weight: normal;
-  margin-top: 40.6rem;
+  /* margin-top: 40.6rem; */
 
   @media (min-width: 1024px) {
     font-weight: bold;
@@ -137,7 +139,7 @@ header {
     display: block;
     line-height: var(--line-height-text);
     margin-left: 25px;
-    margin-top: 36.6rem;
+    margin-top: 9rem;
   }
 }
 
@@ -217,6 +219,10 @@ header {
     max-width: 100%;
     margin: 0;
   }
+}
+
+.unselectable:hover {
+  background-color: var(--primary-color);
 }
 
 .desktop-search form {
@@ -533,13 +539,14 @@ header {
   &.desktop-visible-chat {
     button {
       cursor: pointer;
+      color: white;
       font-size: var(--font-size-text);
       background: none;
       border: none;
       padding: 0;
       align-self: flex-end;
     }
-    background: var(--primary-background-color);
+    background: var(--secondary-text-color);
     display: flex;
     flex-direction: column;
     padding: 16px;
@@ -560,6 +567,7 @@ header {
     margin-block-end: 16px;
     border-radius: 16px 16px 16px 0;
     background: var(--primary-background-color);
+    margin-block-start: 1em;
   }
 }
 
