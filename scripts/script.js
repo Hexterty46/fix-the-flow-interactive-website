@@ -2,6 +2,10 @@
 const fixedButton = document.getElementById("fixedButton");
 const chatBox = document.getElementById("chatBox");
 const closeChatButton = document.getElementById("closeChat");
+const aiOpenChat = document.getElementById("aiButtonSecondary");
+const aiCloseChat = document.getElementById("aiChatClose");
+const aiChatBox = document.querySelector(".ai-chat-desktop");
+
 
 const filterButton = document.getElementById("filterenButton");
 const filterenSection = document.getElementById("filterSection");
@@ -9,8 +13,10 @@ const filterenSection = document.getElementById("filterSection");
 fixedButton.addEventListener("click", openChat);
 closeChatButton.addEventListener("click", closeChat);
 
+aiOpenChat.addEventListener("click", aiChatOpen);
+aiCloseChat.addEventListener("click", aiChatClose);
+
 filterButton.addEventListener("click", toggleFilter);
-// filterenSection.addEventListener('click', closeFilter )
 
 document.addEventListener("keydown", handleKeyPress);
 
@@ -19,6 +25,14 @@ function handleKeyPress(event) {
     closeChat();
     closeFilter();
   }
+}
+
+function aiChatOpen() {
+  aiChatBox.classList.add("desktop-visible-chat");
+}
+
+function aiChatClose() {
+  aiChatBox.classList.remove("desktop-visible-chat");
 }
 
 function openChat() {
@@ -33,21 +47,4 @@ function closeChat() {
 
 function toggleFilter() {
   filterenSection.classList.toggle("is-open");
-  // filterButton.classList.toggle("is-open")
 }
-
-// function closeFilter() {
-//     filterenSection.classList.remove("is-open")
-//     filterButton.classList.remove("is-open")
-// }
-
-// checkbox ENTER key functie
-// document.querySelectorAll('input[type="checkbox"]').forEach((cb) => {
-//   cb.addEventListener("keydown", (e) => {
-//     if (e.key === "Enter") {
-//       e.preventDefault();
-//       cb.checked = !cb.checked;
-//       cb.dispatchEvent(new Event("change"));
-//     }
-//   });
-// });
