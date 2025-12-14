@@ -585,6 +585,11 @@ header {
   border-left: 3px solid var(--primary-color);
 }
 
+.message.user {
+  border-right: 3px solid var(--primary-color);
+  margin-left: 37px;
+}
+
 .chat-input {
   display: flex;
   border-top: 1px solid var(--checkbox-background-color);
