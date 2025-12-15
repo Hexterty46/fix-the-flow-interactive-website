@@ -269,6 +269,7 @@ header {
 
   &.is-open {
     display: flex;
+    overflow: scroll;
   }
 }
 
@@ -421,6 +422,9 @@ header {
 
 .article-product {
   width: 208px;
+  p {
+    font-weight: var(--font-weight-heading);
+  }
 }
 
 .article-product-img img {
@@ -616,6 +620,12 @@ header {
 } */
 
 /* article tags */
+
+.article-tags img {
+  width: 2.5rem;
+  border-radius: 50%;
+}
+
 .article-tag-timeless {
   background: var(--timeless-label-color);
   color: var(--secondary-background-color);
