@@ -7,6 +7,18 @@ const aiCloseChat = document.getElementById("aiChatClose");
 const aiChatBox = document.querySelector(".ai-chat-desktop");
 
 
+// array voor foto's
+const images = [
+  "./images/fiets-1.png",
+  "./images/fiets-2.png"
+];
+
+let currentIndex = 1
+
+const mainImage = document.getElementById("mainImage")
+const thumbs = document.querySelector(".thumbnails img")
+
+
 const filterButton = document.getElementById("filterenButton");
 const filterenSection = document.getElementById("filterSection");
 
@@ -24,6 +36,7 @@ function handleKeyPress(event) {
   if (event.code == "Escape") {
     closeChat();
     closeFilter();
+    aiChatClose();
   }
 }
 
@@ -47,4 +60,26 @@ function closeChat() {
 
 function toggleFilter() {
   filterenSection.classList.toggle("is-open");
+}
+
+function selectImage(index) {
+  currentIndex = index
+  mainImage.src = images[index]
+  updateActive()
+}
+
+function nextImage() {
+  currentIndex = (currentIndex + 1) % images.length
+  selectImage(currentIndex)
+}
+
+function prevImage() {
+  currentIndex = (currentIndex = 1 + images.length) % images.length
+  selectImage(currentIndex)
+}
+
+function updateActive() {
+  thumbs.forEach((img, i) => {
+    img.classList.toggle("active", i === currentIndex)
+  })
 }
