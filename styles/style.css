@@ -414,7 +414,7 @@ header {
 }
 
 .article-product {
-  width: 208px;
+  /* width: 208px; */
   p {
     font-weight: var(--font-weight-heading);
   }
